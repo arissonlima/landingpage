@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 
 import localFont from "next/font/local";
 import styles from "./Home.module.scss";
+import Welcome from "@/components/Welcome";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -18,6 +19,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Header />
+      <Welcome />
     </div>
   );
 }
